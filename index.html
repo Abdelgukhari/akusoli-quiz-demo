@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Akusoli Style Quiz Demo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="progress-container">
+        <div id="progress-bar"></div>
+        <div id="progress-text">Step 1 of 4</div>
+    </div>
+
+    <div class="quiz-container">
+        <h1 id="question">What would you like to achieve?</h1>
+        <div class="options" id="options">
+            <button class="option" onclick="nextStep()">Lose 1 to 3 kg <span>→</span></button>
+            <button class="option" onclick="nextStep()">Lose 4 to 9 kg <span>→</span></button>
+            <button class="option" onclick="nextStep()">Lose 9 to 15 kg <span>→</span></button>
+            <button class="option" onclick="nextStep()">Maintain weight and tone <span>→</span></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
