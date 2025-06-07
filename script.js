@@ -30,13 +30,17 @@ function nextStep() {
             <button class="option" onclick="nextStep()">Feel healthier <span>→</span></button>
         `;
     } else if (step === 4) {
-        question.textContent = "Result";
+        question.textContent = "🎉 Your Personalized Result";
         options.innerHTML = `
-            <p>Here is your personalized result:</p>
-           <img src="images/result-image.jpg" alt="Result Image" style="margin: 20px 0; border-radius: 12px;" />
-            <a href="https://www.moneysite.com" target="_blank">
-                <button class="option">Continue to Site <span>→</span></button>
-            </a>
+            <div class="result-section">
+                <p class="result-message">Congratulations! Here is your personalized result based on your answers:</p>
+                <img src="images/result-image.jpg" alt="Result Image" class="result-img" />
+                <div class="result-actions">
+                    <a href="https://www.moneysite.com" target="_blank" class="continue-link">
+                        <button class="option result-btn">Continue to Site <span>→</span></button>
+                    </a>
+                </div>
+            </div>
         `;
     }
 }
