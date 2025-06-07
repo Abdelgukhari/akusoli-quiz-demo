@@ -33,7 +33,7 @@ function nextStep() {
         question.textContent = "Result";
         options.innerHTML = `
             <p>Here is your personalized result:</p>
-            <img src="https://via.placeholder.com/400x200?text=Result+Image" alt="Result Image" />
+           <img src="images/result-image.jpg" alt="Result Image" style="margin: 20px 0; border-radius: 12px;" />
             <a href="https://www.moneysite.com" target="_blank">
                 <button class="option">Continue to Site <span>→</span></button>
             </a>
